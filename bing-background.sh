@@ -1,12 +1,12 @@
 #!/bin/bash
 
-url="https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=en-US"
-image_name=$(date '+%Y-%m-%d.jpg')
-username=$(whoami)
+url="https://www.bing.com/th?id=OHR.BenasqueValley_EN-US1614880060_1920x1080.jpg&rf=LaDigue_1920x1080.jpg"
+image_name=$(date '+%Y-%m-%d.jpg') # exmple: [year-month-day.jpg] 2020-05-01.jpg
+image_path=$HOME/Pictures/$image_name # also saving path
 
-#downloading image ... 
-wget --output-document=/home/$username/Pictures/$image_name $url 
+#downloading image ...
+wget --output-document=$image_path $url
 
-# changing background to image downloaded
-gsettings set org.gnome.desktop.background picture-uri "file:///home/$username/Pictures/$image_name"
+# changing gnome desktop wallpaper
+gsettings set org.gnome.desktop.background picture-uri "file://$image_path"
 
