@@ -1,4 +1,5 @@
-### a bash script for download image from bing.com and changing background to that image.
+### bash script for changing gnome background to today's bing image
+
 
 
 
