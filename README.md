@@ -3,7 +3,7 @@
 `
 ./bing-background.sh
 `
-### i3
+### for i3wm users
 install feh in Arch
 `
 sudo pacman -S feh

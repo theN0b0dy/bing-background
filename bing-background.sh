@@ -10,5 +10,5 @@ wget --output-document=$image_path $url
 # changing gnome desktop wallpaper
 #gsettings set org.gnome.desktop.background picture-uri "file://$image_path"
 
-# for i3 user use feh
+# for i3wm user with feh
 # exec feh --randomize --bg-fill $image_path
