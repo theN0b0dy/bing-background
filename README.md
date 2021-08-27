@@ -3,6 +3,25 @@
 `
 ./bing-background.sh
 `
-
-
-
+### i3
+install feh in Arch
+`
+sudo pacman -S feh
+`
+add this line to ./bing-background.sh
+`
+exec feh --randomize --bg-fill $image_path
+`
+## For automate in Arch
+install cronie
+`
+sudo pacman -S cronie
+`
+automate in cron.hourly
+`
+sudo cp .bing-background.sh /etc/cron.hourly/bing-background
+`
+test for working
+`
+run-parts --test /etc/cron.hourly/
+`
