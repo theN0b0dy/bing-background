@@ -32,5 +32,4 @@ test for working
 <br/>
 `
 run-parts --test /etc/cron.hourly/
-`
-.
+`.
